@@ -6,7 +6,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 
 @Data
-public class Memeber {
+public class Member {
     private Long id;
     @NotBlank
     private String loginId; //로그안 ID

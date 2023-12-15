@@ -1,2 +1,18 @@
-package hello.login.web.login;public class LoginForm {
+package hello.login.web.login;
+
+import hello.login.domain.member.MemberRepository;
+import lombok.Data;
+
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
+@Data
+public class LoginForm {
+    @NotEmpty
+    private String loginId;
+
+    @NotEmpty
+    private String password;
+
+
 }
