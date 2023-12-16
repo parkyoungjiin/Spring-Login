@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
 // 세션 관리
 @Component
 public class SessionManager {
-    public static final String SESSION_COOKIE_NAME = "sessionId";
+    public static final String SESSION_COOKIE_NAME = "mySessionId";
     //여러 요청, 여러 스레드가 접근할 경우(동시성 문제) ConcurrentHashMap을 사용.
     private Map<String, Object> sessionStore = new ConcurrentHashMap<>();
 
