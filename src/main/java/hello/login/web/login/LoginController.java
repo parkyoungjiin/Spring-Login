@@ -91,12 +91,13 @@ public class LoginController {
 
         //로그인 성공 처리
         // request.getSession() -> 세션이 있으면 있는 세션을 반환하고, 없으면 신규 세션을 생성한다.
-        //true(default) , false
+        // true(default) , false
         HttpSession session = request.getSession();
 
         //세션에 로그인 회원 정보를 보관
         //setAttribute("name", Object)
         session.setAttribute(SessionConst.LOGIN_MEMBER, loginMember);
+
 
 
         return "redirect:/";
